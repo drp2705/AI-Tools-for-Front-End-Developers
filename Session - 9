@@ -1,0 +1,77 @@
+Task 1: Food Delivery App Icon Prompts
+Order Now Icon:
+
+"A vibrant 3D glassmorphism app icon of a steaming fast-food cloche serving platter, warm orange and white color palette, glossy finish, soft ambient shadow, isolated white background, 3D claymation style, high resolution 8k"
+
+Track Order Icon:
+
+"A 3D glassmorphic app icon of a GPS location map pin with a fast delivery scooter inside, bright crimson red and soft yellow neon accent, sleek glossy finish, soft studio lighting, isolated white background, modern app UI icon"
+
+Offers Icon:
+
+"A modern 3D app icon of a gift discount tag and exploding golden percentage symbol, warm sunset orange gradient, glossy metallic highlights, soft studio lighting, isolated white background, clean app UI graphic"
+
+Task 2: Spotify-Style Music Playlist Background
+Leonardo.ai Prompt
+"Abstract dark moody music playlist background, deep emerald green, midnight violet, and electric cyan aurora gradients, smooth glowing sound waves, subtle dark bokeh light particles, atmospheric mist, studio lighting, minimal aesthetic, high resolution, 8k --ar 16:9"
+
+my-app/
+└── src/
+    └── assets/
+        └── backgrounds/
+            └── playlist-bg.png
+
+Task 3: Cricket Fan App Hero Image & React Component
+Adobe Firefly Prompt
+"Energetic IPL cricket stadium hero graphic, glowing floodlights, vibrant stadium crowd under a dark night sky, dynamic motion trails around a golden cricket ball hitting a cricket bat with sparks, bold royal blue and electric gold lighting, modern sports app aesthetic, ultra-high resolution, cinematic 8k render"
+
+import React from 'react';
+import heroBanner from '../assets/backgrounds/cricket-hero.png';
+
+export const HeroSection = () => (
+  <section className="hero-section" style={{ position: 'relative', overflow: 'hidden' }}>
+    <img 
+      src={heroBanner} 
+      alt="IPL Cricket Stadium Hero Banner" 
+      className="hero-image"
+      style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+    />
+    <div className="hero-overlay" style={{ position: 'absolute', top: '20%', left: '5%', color: '#FFF' }}>
+      <h1>Live the IPL Excitement</h1>
+      <p>Get real-time scores, match stats, and fan polls.</p>
+    </div>
+  </section>
+);
+
+export default HeroSection;
+
+Task 4: Hero Image WebP Optimization (<300KB)Optimization Summary TableOptimization StageFile FormatFile SizeReduction %Original OutputPNG2.85 MBBaselineOptimized AssetWebP (Quality 82%)242 KB~91.5% reduction
+
+import React from 'react';
+import heroBannerWebP from '../assets/backgrounds/cricket-hero.webp';
+import heroBannerFallback from '../assets/backgrounds/cricket-hero-compressed.png';
+
+export const HeroSection = () => (
+  <section className="hero-container">
+    <picture>
+      <source srcSet={heroBannerWebP} type="image/webp" />
+      <img 
+        src={heroBannerFallback} 
+        alt="IPL Cricket Stadium Action Hero Banner" 
+        className="hero-bg"
+        width="1920"
+        height="1080"
+        loading="eager"
+      />
+    </picture>
+  </section>
+);
+
+export default HeroSection;
+
+Task 5: Tech Startup Prompts & Model Comparison (Firefly vs. Midjourney)
+Prompts Generated
+Tone 1 (Realistic): "A modern tech startup team collaborating in a bright, sunlit glass office space, looking at glowing futuristic holographic code dashboards, cinematic photo, shallow depth of field, 35mm lens, natural lighting, realistic textures, highly detailed, 8k"
+
+Tone 2 (Cartoonish): "Vibrant 2D flat vector illustration of a creative tech startup team building a futuristic glowing app, colorful floating digital widgets, soft isometric geometry, cheerful pastel palette, clean minimal design, modern SaaS landing page hero style"
+
