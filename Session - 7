@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electronics Store | Shop Laptops, Mobiles & Audio Deals - ElectroCart</title>
+    <meta name="description" content="Discover top-rated electronics on ElectroCart! Shop smartphones, laptops, smartwatches, and wireless audio with fast delivery and exclusive daily discounts.">
+    <meta name="keywords" content="online electronics store, buy smartphones online, best laptop deals, wireless earbuds, smartwatches online India">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.electrocart.com/">
+</head>
+<body>
+    <h1>Welcome to ElectroCart - India's Favorite Electronics Hub</h1>
+</body>
+</html>
+
+import React from 'react';
+
+const ProductDescription = () => {
+  return (
+    <div className="product-description-card" style={{ padding: '20px', border: '1px solid #E5E7EB', borderRadius: '8px' }}>
+      <h2 style={{ color: '#111827', fontSize: '1.25rem', marginBottom: '10px' }}>
+        SoundPulse Pro Wireless Earbuds
+      </h2>
+      <p style={{ color: '#4B5563', lineHeight: '1.6', fontSize: '0.95rem' }}>
+        Experience high-fidelity sound with the SoundPulse Pro Wireless Earbuds. 
+        Designed for music lovers and busy professionals, these Bluetooth 5.3 earbuds 
+        deliver crystal-clear audio with active noise cancellation (ANC). Enjoy up to 
+        30 hours of playback with the sleek fast-charging case, while the ergonomic 
+        water-resistant design ensures a secure fit during workouts. With intuitive touch 
+        controls and instant voice assistant integration, managing your calls and playlists 
+        has never been easier. Upgrade your daily listening experience with seamless 
+        connectivity, deep bass, and stylish comfort designed to move with you anywhere.
+      </p>
+    </div>
+  );
+};
+
+export default ProductDescription;
+
+<img 
+  src="assets/images/pepperoni-pizza.jpg" 
+  alt="Freshly baked wood-fired Pepperoni Pizza with melted mozzarella cheese, crispy golden crust, and fresh basil leaves on a rustic serving board" 
+  width="600" 
+  height="400" 
+  loading="lazy"
+/>import React from 'react';
+import pizzaImg from '../assets/images/pepperoni-pizza.jpg';
+
+export const FoodCard = () => (
+  <div className="food-card">
+    <img 
+      src={pizzaImg} 
+      alt="Freshly baked wood-fired Pepperoni Pizza with melted mozzarella cheese, crispy golden crust, and fresh basil leaves on a rustic serving board" 
+      className="food-card-img" 
+      loading="lazy" 
+    />
+  </div>
+);
+
